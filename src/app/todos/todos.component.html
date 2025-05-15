@@ -1,0 +1,29 @@
+
+<div class="container">
+  <h1>To Do List Application</h1>
+  <hr>
+<form class="form-control">
+  <div class="mb-3">
+    <label for="task" class="form-label">Task List</label>
+    <input type="text" class="form-control" id="task" placeholder="Task description">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  <hr>
+ <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Tasks</th>
+      <th scope="col">Completed</th>
+      <th scope="col">Deleted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Task description</td>  <!-- interpolation or data binding  -->
+      <td><input class="taskCheckbox" type="checkbox" value="" aria-label="Checkbox for following text input"></td>
+      <td><button class="btn btn-danger btn-sm">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+</div>

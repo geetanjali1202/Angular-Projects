@@ -1,0 +1,39 @@
+form {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #9cb8d4;
+  border-radius: 5px;
+  background-color: #b59cb6;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="contact"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box; /* Important for padding and border to be inside the width */
+}
+
+button {
+  background-color: #413f43;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #815f82;
+}

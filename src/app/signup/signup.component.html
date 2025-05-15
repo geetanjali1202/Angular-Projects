@@ -1,0 +1,48 @@
+
+<div>
+  <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="Enter Full Name" formControlName="name">
+    <div *ngIf="signupForm.get('name')?.errors?.['required']">Name is required</div>
+    <div *ngIf="signupForm.get('name')?.errors?.['minlength']">Name must be atleast 2 letter</div>
+    <br><br>
+
+    <label for="email">Email ID</label>
+    <input type="email" id="email" placeholder="Enter Email ID" formControlName="email">
+    <div *ngIf="signupForm.get('email')?.errors?.['required']">Email ID required</div>
+    <br><br>
+
+    <label for="contact">Contact</label>
+    <input type="text" id="contact" placeholder="Enter Contact Number" formControlName="contact">
+    <div *ngIf="signupForm.get('contact')?.errors?.['required']">Contact required</div>
+    <div *ngIf="signupForm.get('contact')?.errors?.['pattern']">Must be 10 digit number</div>
+    <br><br>
+
+    <button type="submit">Sign Up</button>
+<button type="button" (click)="resetIfInvalid()">Reset</button>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- <div>
+<form action="" method="post">
+    <label for="fname">Full Name</label>
+    <input type="text" placeholder="Enter Full Name" [formControl]="name">
+    <br><br>
+    <label for="email">Email ID</label>
+    <input type="email" placeholder="Enter Email ID"  [formControl]="email">
+    <br><br>
+    <label for="contact">Contact</label>
+    <input type="contact" placeholder="Enter Contact Number " [formControl]="contact">
+    <br><br>
+    <button type="button" (click)="OnSubmit()">Login</button>
+</form>
+</div>-->

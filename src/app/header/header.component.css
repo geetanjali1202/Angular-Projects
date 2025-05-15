@@ -1,0 +1,38 @@
+.topnav {
+  background-color: #333; /* Dark background color */
+  overflow: hidden; /* Prevent content from overflowing */
+  padding: 15px 20px; /* Add some padding inside the navigation bar */
+  border-radius: 8px; /* Slightly rounded corners for the bar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.topnav a {
+  float: left; /* Float links to the left to be inline */
+  display: block; /* Make them block-level for proper padding and margin */
+  color: #f2f2f2; /* Light gray text color */
+  text-align: center; /* Center text within the link */
+  padding: 10px 16px; /* Padding around the link text */
+  text-decoration: none; /* Remove underlines from links */
+  font-size: 16px; /* Slightly larger font size */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+  border-radius: 5px; /* Slightly rounded corners for the links */
+}
+
+.topnav a:hover {
+  background-color: #ddd; /* Light gray background on hover */
+  color: black; /* Black text on hover */
+}
+
+.topnav a.active {
+  background-color: #04AA6D; /* Green background for the active link */
+  color: white; /* White text for the active link */
+}
+
+/* Responsive design - make the navigation bar stack on smaller screens */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none; /* Make links stack vertically */
+    width: 100%; /* Take full width of the container */
+    text-align: left; /* Align text to the left on smaller screens */
+  }
+}
